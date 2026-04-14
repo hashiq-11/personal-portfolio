@@ -1,0 +1,106 @@
+{
+  "skills": [
+    { "icon": "fa-solid fa-code", "title": "Programming", "description": "C#" },
+    { "icon": "fa-brands fa-unity", "title": "Unity Systems", "description": "WebGL, 2D & 3D, AR/VR (XR Toolkit), Multiplayer (Netcode), Cinemachine, Animator, Shader Graph, HDRP/URP, Timeline, AI NavMesh" },
+    { "icon": "fa-solid fa-gauge-high", "title": "Optimization", "description": "Asset Bundles, Addressables, Profiler, Object Pooling, Occlusion Culling, Batching, Texture Compression" },
+    { "icon": "fa-solid fa-network-wired", "title": "Architecture", "description": "REST API, JSON Persistence, Server-Client Data, OOP, Design Patterns, State Machines" },
+    { "icon": "fa-solid fa-car", "title": "Physics", "description": "Character Controllers, Custom Vehicle Physics, Raycasting, Physics Engines" },
+    { "icon": "fa-solid fa-hammer", "title": "Tools", "description": "Git, GitHub, Blender" }
+  ],
+  "experience": [
+    {
+      "date": "July 2025 – Jan 2026",
+      "role": "Unity Developer (Full-Time)",
+      "company": "eJeeva Technologies Pvt Ltd, Bangalore",
+      "points": [
+        "<strong>Procedural Architecture:</strong> Architected core logic for an enterprise-level pool design tool, implementing procedural mesh generation.",
+        "<strong>Data Strategy:</strong> Designed modular architecture using Scriptable Objects and JSON persistence for save/load cycles.",
+        "<strong>Optimization:</strong> Integrated Addressables for memory management and utilized Blendshapes for high-performance mesh deformation.",
+        "<strong>Integration:</strong> Collaborated with backend to integrate REST APIs and technical artists for visual pipelines."
+      ]
+    },
+    {
+      "date": "Jan 2025 – June 2025",
+      "role": "Unity Developer Intern",
+      "company": "eJeeva Technologies Pvt Ltd, Bangalore",
+      "points": [
+        "<strong>UI/UX Implementation:</strong> Built interactive 3D UI components ensuring high-fidelity user interaction.",
+        "<strong>Technical Maintenance:</strong> Debugged and refactored core C# scripts transitioning from prototype to production.",
+        "<strong>Agile Workflow:</strong> Mastered Git Version Control in a professional engineering team environment."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "image": "assets/project_placeholder.png",
+      "title": "HouseMaker Cococate (3D Configurator)",
+      "description": "Interactive architectural visualization tool for dynamic apartment customization.",
+      "stack": ["Unity 3D", "Addressables", "JSON", "Dynamic UIs"],
+      "links": {
+        "github": "https://github.com/hashiq-11/HouseMakerCococat.git",
+        "youtube": "https://youtu.be/KWxjTdjD5WY",
+        "play": "https://h-ashiq-hq.itch.io/housemakercococat"
+      }
+    },
+    {
+      "image": "assets/project_placeholder.png",
+      "title": "Parking Sim: Open-World",
+      "description": "Engineered custom vehicle physics with gear ratios, friction-based drifting, and NavMesh AI traffic avoidance.",
+      "stack": ["Unity Physics", "Wheel Colliders", "NavMesh"],
+      "links": {
+        "github": "https://github.com/hashiq-11/Parking-sim",
+        "youtube": "https://youtu.be/oi_ZzzR7OEA"
+      }
+    },
+    {
+      "image": "assets/project_placeholder.png",
+      "title": "X-PUB: Multiplayer TPS Deathmatch",
+      "description": "Server-authoritative multiplayer with client-side prediction, dedicated server logic, and IK ragdoll networking.",
+      "stack": ["Netcode (NGO)", "Dedicated Server", "State Machines"],
+      "links": {
+        "github": "https://github.com/hashiq-11/X-PUB",
+        "youtube": "https://youtu.be/i1-ipBZLx1E"
+      }
+    },
+    {
+      "image": "assets/project_placeholder.png",
+      "title": "Space Trap (VR Experience)",
+      "description": "Immersive VR systems with physics grabbing, continuous locomotion, and custom holographic Shader Graphs.",
+      "stack": ["XR Toolkit", "Shader Graph", "Unity Events"],
+      "links": {
+        "github": "https://github.com/hashiq-11/Space-Trap-VR-",
+        "youtube": "https://youtu.be/C1SJOTPFX9Q"
+      }
+    },
+    {
+      "image": "assets/project_placeholder.png",
+      "title": "AR Basketball (Augmented Reality)",
+      "description": "Physics-based trajectory calculations and AR Plane Manager reticle placement for real-world interactions.",
+      "stack": ["AR Foundation", "ARCore/ARKit"],
+      "links": {
+        "github": "https://github.com/hashiq-11/AR-Basket-ball-game",
+        "youtube": "https://youtube.com/shorts/IAIEPog__fE?si=Z0unXqEmVnMGFM-h"
+      }
+    },
+    {
+      "image": "assets/project_placeholder.png",
+      "title": "Samurai Monster Hunter (2D)",
+      "description": "Action platformer utilizing Blend Trees, Tilemaps, Boss fight state machines, and intelligent Enemy AI.",
+      "stack": ["Unity 2D", "Animator", "Tilemaps"],
+      "links": {
+        "github": "https://github.com/hashiq-11/Semurai_2D",
+        "youtube": "https://youtu.be/WdRFa_cf5IE"
+      }
+    },
+    {
+      "image": "assets/project_placeholder.png",
+      "title": "Night-X Racing",
+      "description": "Modular garage system allowing runtime mesh swaps and waypoint-based AI racing system that adjusts to curves.",
+      "stack": ["C#", "AI Waypoints", "Data Systems"],
+      "links": {
+        "github": "https://github.com/hashiq-11/git-car-game",
+        "youtube": "https://youtu.be/cGqEKhxJZwg"
+      }
+    }
+  ]
+}

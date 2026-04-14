@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Hashiq | Unity Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Ambient Mouse Glow -->
+    <div class="ambient-glow"></div>
+
+    <!-- Floating Particles -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">Hashiq<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="btn-nav">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h2 class="greeting fade-up">Hello, I'm</h2>
+            <h1 class="name fade-up">Muhammed Hashiq</h1>
+            <h3 class="title fade-up">Unity Gameplay \ Systems Developer</h3>
+            <p class="subtitle fade-up"><span class="typewriter" id="typewriter"></span></p>
+            <div class="social-links fade-up">
+                <a href="https://github.com/hashiq-11" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ms-muhammed-hashiq/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:hashiqms@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="hero-actions fade-up">
+                <a href="#projects" class="btn-primary"><i class="fa-solid fa-code"></i>&nbsp; View My Work</a>
+                <a href="assets/Updated%20Hashiq%20Resume.pdf" download="Muhammed_Hashiq_Resume.pdf" class="btn-secondary">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>&nbsp; Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    I am a self-taught <strong>Unity Developer</strong> with a strong foundation in <strong>C#</strong> and modular system architecture. 
+                    I transitioned from an intensive self-learning curriculum to building industry-level tools and gameplay systems, 
+                    with a focus on <strong>Netcode for GameObjects</strong>, <strong>VR/AR interactions</strong>, and <strong>URP optimization</strong>. 
+                </p>
+                <p>
+                    I am deeply passionate about engineering clean, scalable mechanics—ranging from procedural geometry tools to immersive open-world multiplayer experiences.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Technical Arsenal</h2>
+            <div class="skills-grid" id="skills-container">
+                <!-- Skills will be injected here via data.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline" id="experience-container">
+                <!-- Experience will be injected here via data.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-grid" id="projects-container">
+                <!-- Projects will be injected here via data.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Chirakkal, Kattakampal, Kerala, India</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 9746914027</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hashiqms@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-cta fade-up">
+                    <p style="margin-bottom: 20px;">Ready to collaborate or have a question? Recruiters and studios can reach me directly below.</p>
+                    <a href="#" id="email-btn" class="btn-primary">
+                        <i class="fa-solid fa-paper-plane"></i>&nbsp; Copy Email & Open App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="https://github.com/hashiq-11" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ms-muhammed-hashiq/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2026 Muhammed Hashiq. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

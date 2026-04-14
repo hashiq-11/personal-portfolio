@@ -1,0 +1,323 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot,
+    top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm, footskip=0.5cm
+]{geometry}
+\usepackage{titlesec, tabularx, array, enumitem, fontawesome5, amsmath, hyperref, eso-pic, calc, bookmark, lastpage, changepage, paracol, ifthen, needspace, iftex}
+
+% PDF metadata:
+\hypersetup{
+    pdftitle={Muhammed Hashiq's CV},
+    pdfauthor={Muhammed Hashiq},
+    pdfcreator={LaTeX},
+    colorlinks=true,
+    urlcolor=black
+}
+
+% Font settings:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+\usepackage{charter}
+
+% Formatting adjustments:
+\raggedright
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0.1cm}
+\pagenumbering{gobble}
+
+% Section title formatting:
+\titleformat{\section}{\needspace{3\baselineskip}\bfseries\normalsize}{}{0pt}{}[\vspace{0.5pt}\titlerule]
+\titlespacing{\section}{-1pt}{0.2cm}{0.1cm}
+
+% Custom bullet points:
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+
+% List settings:
+\newenvironment{highlights}{
+    \begin{itemize}[topsep=0.05cm, parsep=0.05cm, itemsep=0pt, leftmargin=10pt]
+}{
+    \end{itemize}
+}
+
+% Header:
+\newenvironment{header}{
+    \centering\linespread{1.2}
+}{
+    \par
+}
+
+% Contact Information Formatting:
+\newcommand{\AND}{\unskip\cleaders\hbox{\copy\ANDbox}\hskip\wd\ANDbox\relax
+    \cleaders\copy\ANDbox\hskip\wd\ANDbox
+    \ignorespaces
+}
+\newsavebox\ANDbox
+\sbox\ANDbox{$|$}
+
+\begin{document}
+\begin{center}
+    {\fontsize{20pt}{22pt}\textbf{Muhammed Hashiq}} \\[4pt]
+    \small
+    \faEnvelope~ \href{mailto:hashiqms@gmail.com}{hashiqms@gmail.com} \quad
+    \faPhone~ \href{tel:+91-9746914027}{+91-9746914027} \quad
+    \faLinkedin~ \href{https://www.linkedin.com/in/ms-muhammed-hashiq/}{linkedin.com/in/ms-muhammed-hashiq} \quad
+    \faGithub~ \href{https://github.com/hashiq-11}{github.com/hashiq-11}
+\end{center}
+
+
+\section{About me}
+\vspace{0.1 cm}
+\begin{onecolentry}
+Self-taught \textbf{Unity Developer} with a strong foundation in \textbf{C\#} and modular system architecture. I transitioned from an intensive self-learning curriculum to building industry-level tools and gameplay systems, with a focus on \textbf{Netcode for GameObjects}, \textbf{VR/AR interactions}, and \textbf{URP optimization}. I am passionate about engineering clean, scalable mechanics—ranging from procedural geometry tools to open-world racing Games.
+\end{onecolentry}
+
+\vspace{0.1 cm}
+
+% ---------------------------------------------------------
+% SKILLS SECTION
+% ---------------------------------------------------------
+\section{SKILLS}
+
+\textbf{Programming Languages:} C\#
+
+\vspace{0.2cm}
+
+\textbf{Unity Skill Set:}  
+Unity WebGL, 2D \& 3D Game Development, AR \& VR (XR Toolkit), Multiplayer (Netcode), Cinemachine, Animator, Shader Graph, Post-Processing, HDRP \& URP, Timeline, Audio Manager, AI Systems.
+
+\vspace{0.2cm}
+
+\textbf{Performance \& Optimization:}  
+WebGL Memory Management, Asset Bundles \& Addressables, Profiler, Object Pooling, Occlusion Culling, Batching Techniques, Texture Compression (ASTC/Crunch), Script Optimization.
+
+\vspace{0.2cm}
+
+\textbf{Backend \& Architecture:}  
+API Integration, JSON/Data Handling, Server-Client Communication, Data Structures \& Algorithms, Object-Oriented Programming (OOP), Design Patterns, State Machines.
+
+\vspace{0.2cm}
+
+\textbf{Physics \& Gameplay:}  
+Character Controllers, Vehicle Physics, Raycasting, Physics Engines, Pathfinding (NavMesh), Environment Design.
+
+\vspace{0.2cm}
+
+\textbf{Tools \& Version Control:}  
+Git, GitHub, Blender.
+% ---------------------------------------------------------
+% EXPERIENCE SECTION
+% ---------------------------------------------------------
+\section{Professional Experience}
+
+% --- Full Time Role ---
+\begin{twocolentry}{
+    July 2025 – Jan 2026 
+}
+    \textbf{Unity Developer (Full-Time)} \\
+    \textit{eJeeva Technologies Pvt Ltd, Bangalore} 
+\end{twocolentry}
+    
+\vspace{0.1 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item \textbf{Procedural Systems Architecture:} Architected core logic for an enterprise-level pool design tool, implementing procedural mesh generation for dynamic 3D components and pool geometry.
+        \item \textbf{Data Strategy \& Persistence:} Designed a modular data architecture using \textbf{Scriptable Objects} and implemented \textbf{JSON-based persistence} for complex user project save/load cycles.
+        \item \textbf{Performance Optimization:} Integrated \textbf{Addressables} for efficient memory management and utilized \textbf{Blendshapes} for high-performance mesh expansion and deformation logic.
+        \item \textbf{Cross-Functional Integration:} Collaborated with backend engineers to integrate \textbf{RESTful APIs} and worked with technical artists to translate complex visual concepts into modular C\# code.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.2 cm} 
+
+% --- Internship Role ---
+\begin{twocolentry}{
+    Jan 2025 – June 2025
+}
+    \textbf{Unity Developer Intern} \\
+    \textit{eJeeva Technologies Pvt Ltd, Bangalore} 
+\end{twocolentry}
+
+\vspace{0.1 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item \textbf{UI \& UX Implementation:} Built interactive 3D UI components and navigation systems, ensuring high-fidelity user interaction within the design software prototype.
+        \item \textbf{Technical Maintenance:} Debugged and refactored core C\# scripts to ensure stability during the transition from the prototype phase to production environments.
+        \item \textbf{Agile Development:} Mastered industry-standard \textbf{Git Version Control} and participated in full-cycle development within a professional engineering team.
+    \end{highlights}
+\end{onecolentry}
+\section{Projects}
+
+\vspace{0.3cm}
+\begin{twocolentry}{
+    \textbf{HouseMaker Cococate (3D Apartment Configurator)}
+}
+    \hfill  
+    \href{https://github.com/hashiq-11/HouseMakerCococat.git}{\faGithub~GitHub} \quad
+    \href{https://h-ashiq-hq.itch.io/housemakercococat}{\faGamepad~Itch.io} \quad
+    \href{https://youtu.be/KWxjTdjD5WY}{\faYoutube~YouTube}
+\end{twocolentry}
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item \textbf{Tech Stack:} Unity 3D, C\#, Addressables, Blender, JSON, Dynamic UI Systems.
+        \item Developed an interactive architectural visualization tool allowing users to dynamically configure and customize apartment interiors in real-time.
+        \item Optimized 3D assets using Blender and environmental lighting in unity, and integrated Unity Addressables to ensure high-fidelity rendering and efficient memory management.
+        \item Engineered a robust custom save/load system using JSON, allowing users to persist their specific furniture and material configurations across multiple sessions.
+        \item Built modular UI systems and seamless runtime swapping of 3D furniture models, textures, and surface materials.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.3cm}
+\begin{twocolentry}{
+    \textbf{Parking Sim: Open-World }
+}
+    \hfill  
+    \href{https://github.com/hashiq-11/Parking-sim}{\faGithub~GitHub} \quad
+    \href{https://youtu.be/oi_ZzzR7OEA}{\faYoutube~YouTube}
+\end{twocolentry}
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item \textbf{Tech Stack:} Unity Physics, Wheel Colliders, NavMesh, Post-Processing Stack.
+        \item Engineered a custom vehicle controller with realistic gear ratios, RPM simulation, and friction-based drifting mechanics.
+        \item Programmed AI traffic systems using NavMesh Agents with raycast-based obstacle avoidance and local avoidance logic.
+        \item Optimized open-world rendering using occlusion culling and LOD (Level of Detail) groups to maintain high FPS.
+    \end{highlights}
+\end{onecolentry}
+
+
+\vspace{0.2cm}
+\begin{twocolentry}{
+    \textbf{X-PUB: Multiplayer TPS Deathmatch}
+}
+    \hfill  
+    \href{https://github.com/hashiq-11/X-PUB}{\faGithub~GitHub} \quad
+    \href{https://youtu.be/i1-ipBZLx1E}{\faYoutube~YouTube}
+\end{twocolentry}
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item \textbf{Tech Stack:} Unity Netcode for GameObjects (NGO), C\#, Dedicated Server architecture.
+        \item Architected a \textbf{server-authoritative} multiplayer system handling client-side prediction and state synchronization for smooth gameplay.
+        \item Implemented a lobby and matchmaking system connecting players to dedicated server instances.
+        \item Developed complex character state machines handling inverse kinematics (IK) and ragdoll physics synchronization across the network.
+    \end{highlights}
+\end{onecolentry}
+
+
+\vspace{0.3cm}
+\begin{twocolentry}{
+    \textbf{Space Trap (VR Experience)}
+}
+    \hfill  
+    \href{https://github.com/hashiq-11/Space-Trap-VR-}{\faGithub~GitHub} \quad
+    \href{https://youtu.be/C1SJOTPFX9Q}{\faYoutube~YouTube}
+\end{twocolentry}
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item \textbf{Tech Stack:} XR Interaction Toolkit, Shader Graph, Unity Events.
+        \item Developed immersive VR interaction systems including physics-based grabbing, socket interactors, and lever mechanics.
+        \item Implemented continuous locomotion and snap-turn systems, tuned to minimize motion sickness.
+        \item Created custom shaders using Shader Graph to simulate sci-fi holographic effects and environmental ambiance.
+    \end{highlights}
+\end{onecolentry}
+
+
+\vspace{0.3cm}
+\begin{twocolentry}{
+    \textbf{AR Basketball (Augmented Reality)}
+}
+    \hfill  
+    \href{https://github.com/hashiq-11/AR-Basket-ball-game}{\faGithub~GitHub} \quad
+    \href{https://youtube.com/shorts/IAIEPog__fE?si=Z0unXqEmVnMGFM-h}{\faYoutube~YouTube}
+\end{twocolentry}
+
+\vspace{0.1 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item \textbf{Tech Stack:} AR Foundation, ARCore/ARKit, Physics Engine.
+        \item Utilized AR Plane Manager for real-time surface detection and reticle placement logic.
+        \item Calculated trajectory physics based on touch-input velocity to simulate realistic ball throwing mechanics.
+    \end{highlights}
+\end{onecolentry}
+\vspace{0.3cm}
+\begin{twocolentry}{
+    \textbf{Samurai Monster Hunter (2D Platformer)}
+}
+    \hfill  
+    \href{https://github.com/hashiq-11/Semurai_2D}{\faGithub~GitHub} \quad
+    \href{https://youtu.be/WdRFa_cf5IE}{\faYoutube~YouTube}
+\end{twocolentry}
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item \textbf{Tech Stack:} Unity 2D, C\#, Animator State Machines, Tilemaps.
+        \item Developed a side-scrolling action game featuring fluid character animations using "Blend Trees" and complex State Machine logic.
+        \item Designed intelligent Enemy AI with patrolling behaviors, detection ranges, and dynamic attack patterns.
+        \item Utilized Unity "Tilemaps" for efficient level design and collider management across multiple stages.
+        \item Implemented a robust health and damage system with visual feedback and boss fight mechanics.
+    \end{highlights}
+    
+\end{onecolentry}
+\vspace{0.3cm}
+\begin{twocolentry}{
+    \textbf{Night-X Racing}
+}
+    \hfill  
+    \href{https://github.com/hashiq-11/git-car-game}{\faGithub~GitHub} \quad
+    \href{https://youtu.be/cGqEKhxJZwg}{\faYoutube~YouTube}
+\end{twocolentry}
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item Designed a modular "Garage System" allowing runtime swapping of car meshes and physics statistics.
+        \item Implemented a waypoint-based AI racing system that dynamically adjusts speed based on track curvature.
+    \end{highlights}
+\end{onecolentry}
+
+% ---------------------------------------------------------
+% EDUCATION SECTION (Updated)
+% ---------------------------------------------------------
+\vspace{0.5 cm}
+
+\section{Education}
+
+\begin{twocolentry}{
+    Apr 2024 – Dec 2024
+}
+    \textbf{Unity Development (Intensive Self-Learning Program)} \\
+    Brototype, Ernakulam
+\end{twocolentry}
+
+\vspace{0.5 cm}
+\begin{twocolentry}{
+    2022 – 2024
+}
+    \textbf{Computer Science (Higher Secondary)} \\
+    TMVHSS, Perumpilavu
+\end{twocolentry}
+
+\end{document}
