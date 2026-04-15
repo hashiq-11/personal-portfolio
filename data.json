@@ -1,11 +1,11 @@
 {
   "skills": [
-    { "icon": "fa-solid fa-code", "title": "Programming", "description": "C#" },
+    { "icon": "fa-solid fa-code", "title": "Programming", "description": "C#, C++" },
     { "icon": "fa-brands fa-unity", "title": "Unity Systems", "description": "WebGL, 2D & 3D, AR/VR (XR Toolkit), Multiplayer (Netcode), Cinemachine, Animator, Shader Graph, HDRP/URP, Timeline, AI NavMesh" },
     { "icon": "fa-solid fa-gauge-high", "title": "Optimization", "description": "Asset Bundles, Addressables, Profiler, Object Pooling, Occlusion Culling, Batching, Texture Compression" },
     { "icon": "fa-solid fa-network-wired", "title": "Architecture", "description": "REST API, JSON Persistence, Server-Client Data, OOP, Design Patterns, State Machines" },
     { "icon": "fa-solid fa-car", "title": "Physics", "description": "Character Controllers, Custom Vehicle Physics, Raycasting, Physics Engines" },
-    { "icon": "fa-solid fa-hammer", "title": "Tools", "description": "Git, GitHub, Blender" }
+    { "icon": "fa-solid fa-hammer", "title": "Tools", "description": "Git, GitHub, Blender, Godot" }
   ],
   "experience": [
     {
