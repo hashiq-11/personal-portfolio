@@ -94,22 +94,6 @@ ul {
 }
 
 /* =========================================================================
-   Ambient Glow
-========================================================================= */
-.ambient-glow {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(184, 160, 126, 0.06) 0%, transparent 70%);
-    pointer-events: none;
-    z-index: 0;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.3s ease;
-}
-
-/* =========================================================================
    Floating Particles Canvas
 ========================================================================= */
 #particles {
@@ -869,7 +853,7 @@ footer {
 @media (max-width: 768px) {
     /* Disable custom cursor on mobile/tablet */
     * { cursor: auto; }
-    .cursor-dot, .cursor-ring, .ambient-glow { display: none; }
+    .cursor-dot, .cursor-ring { display: none; }
 
     .name { font-size: 3.5rem; }
     .title { font-size: 1.5rem; }

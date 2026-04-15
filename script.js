@@ -154,14 +154,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // Ambient Mouse Glow
-        const ambientGlow = document.querySelector('.ambient-glow');
-        if(ambientGlow) {
-            document.addEventListener('mousemove', (e) => {
-                ambientGlow.style.left = e.clientX + 'px';
-                ambientGlow.style.top = e.clientY + 'px';
-            });
-        }
     }
 
     function initScrollObserver() {
